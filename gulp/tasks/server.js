@@ -4,13 +4,18 @@ gulp = require('gulp');
 
 connect = require('gulp-connect');
 
+cors = require('cors');
+
 config = require('../config');
 
 gulp.task('connect', function() {
   return connect.server({
     port: 1337,
     root: config.distDir,
-    livereload: true
+    livereload: true,
+    middleware: function() {
+        return [cors()];
+    }
   });
 });
 

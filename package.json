@@ -17,5 +17,8 @@
     "require-dir": "^1.2.0",
     "validate.js": "^0.13.1",
     "webpack": "^4.28.2"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5"
   }
 }
