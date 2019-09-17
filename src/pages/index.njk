@@ -1,0 +1,21 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+	<div class="container">
+		<form action="" id="askQuestionForm" class="form form_centered _small_padding" method="post">
+			<h2 class="form__title">Задать вопрос</h2>
+			<div class="form__field">
+				<input id="nameInp" type="text" placeholder="Фамилия Имя Отчество *" name="name" required>
+				<div class="form__error-message">Пожалуйста, укажите ваше имя</div>
+			</div>
+			<div class="form__field">
+				<input id="phoneInp" type="phone" placeholder="Телефон *" name="phone" required>
+				<div class="form__error-message">По номеру телефона мы сможем с вами связяться</div>
+			</div>
+			<div class="form__field">
+				<input id="emailInp" type="email" placeholder="Email" required name="email">
+			</div>
+			<button id="submitBtn" class="button form__submit" type="submit">Отправить запрос</button>
+		</form>
+	</div>
+{% endblock %}
