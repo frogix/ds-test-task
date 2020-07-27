@@ -127,3 +127,5 @@ html {
   transition: .3s ease; }
   .form__submit:hover {
     background: #5a6cf7; }
+  .form__submit:active {
+    background: #5163f7; }
